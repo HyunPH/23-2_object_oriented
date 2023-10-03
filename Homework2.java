@@ -1,13 +1,13 @@
 package ch3;
 import java.util.Scanner;
 
-class Student1{
+class Student{
     int stNum;
     String name;
     String major;
     int phoneNum;
 
-    Student1(int stNum, String name, String major, int phoneNum){
+    Student(int stNum, String name, String major, int phoneNum){
         this.stNum = stNum;
         this.name = name;
         this.major = major;
@@ -30,7 +30,7 @@ public class Homework2_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        Student1 stArray[] = new Student1[3];
+        Student stArray[] = new Student[3];
 
         for(int i = 0;i<3;i++){
             System.out.print("학생의 학번, 이름, 전공, 전화번호를 입력하세요:");
@@ -39,7 +39,7 @@ public class Homework2_1 {
             String major = sc.next();
             int phoneNum = sc.nextInt();
 
-            stArray[i] = new Student1(stNum, name, major, phoneNum);
+            stArray[i] = new Student(stNum, name, major, phoneNum);
         }
 
         System.out.println("\n입력된 학생들의 정보는 다음과 같습니다");
